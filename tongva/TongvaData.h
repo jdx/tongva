@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GeoData.h
 //  tongva
 //
 //  Created by Jeff Dickey on 3/9/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TongvaData : NSObject
+
++ (NSDictionary *)json;
 
 @end

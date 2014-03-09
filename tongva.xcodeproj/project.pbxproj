@@ -15,13 +15,21 @@
 		152C4FF118CCFA59005FA2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C4FF018CCFA59005FA2D2 /* AppDelegate.m */; };
 		152C4FF418CCFA59005FA2D2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C4FF218CCFA59005FA2D2 /* Main_iPhone.storyboard */; };
 		152C4FF718CCFA59005FA2D2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152C4FF518CCFA59005FA2D2 /* Main_iPad.storyboard */; };
-		152C4FFA18CCFA59005FA2D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C4FF918CCFA59005FA2D2 /* ViewController.m */; };
+		152C4FFA18CCFA59005FA2D2 /* HillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C4FF918CCFA59005FA2D2 /* HillsViewController.m */; };
 		152C4FFC18CCFA59005FA2D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152C4FFB18CCFA59005FA2D2 /* Images.xcassets */; };
 		152C500318CCFA59005FA2D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C500218CCFA59005FA2D2 /* XCTest.framework */; };
 		152C500418CCFA59005FA2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C4FE018CCFA59005FA2D2 /* Foundation.framework */; };
 		152C500518CCFA59005FA2D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C4FE418CCFA59005FA2D2 /* UIKit.framework */; };
 		152C500D18CCFA59005FA2D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152C500B18CCFA59005FA2D2 /* InfoPlist.strings */; };
 		152C500F18CCFA59005FA2D2 /* tongvaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C500E18CCFA59005FA2D2 /* tongvaTests.m */; };
+		152C501A18CCFA9C005FA2D2 /* plants.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 152C501918CCFA9C005FA2D2 /* plants.geojson */; };
+		152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C501C18CCFB73005FA2D2 /* TongvaData.m */; };
+		153C3FA218CD0CD300E3E73C /* HillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA118CD0CD300E3E73C /* HillCell.m */; };
+		153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA418CD0FCE00E3E73C /* HillViewController.m */; };
+		153C3FA818CD113F00E3E73C /* PlantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA718CD113F00E3E73C /* PlantCell.m */; };
+		153C3FAB18CD237300E3E73C /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FAA18CD237300E3E73C /* Plant.m */; };
+		153C3FAE18CD244300E3E73C /* Hill.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FAD18CD244300E3E73C /* Hill.m */; };
+		9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C139B08FA4DBF8EFA8261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +55,29 @@
 		152C4FF018CCFA59005FA2D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		152C4FF318CCFA59005FA2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		152C4FF618CCFA59005FA2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		152C4FF818CCFA59005FA2D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		152C4FF918CCFA59005FA2D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		152C4FF818CCFA59005FA2D2 /* HillsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HillsViewController.h; sourceTree = "<group>"; };
+		152C4FF918CCFA59005FA2D2 /* HillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HillsViewController.m; sourceTree = "<group>"; };
 		152C4FFB18CCFA59005FA2D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		152C500118CCFA59005FA2D2 /* tongvaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tongvaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		152C500218CCFA59005FA2D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		152C500A18CCFA59005FA2D2 /* tongvaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tongvaTests-Info.plist"; sourceTree = "<group>"; };
 		152C500C18CCFA59005FA2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		152C500E18CCFA59005FA2D2 /* tongvaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tongvaTests.m; sourceTree = "<group>"; };
+		152C501918CCFA9C005FA2D2 /* plants.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plants.geojson; sourceTree = "<group>"; };
+		152C501B18CCFB73005FA2D2 /* TongvaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongvaData.h; sourceTree = "<group>"; };
+		152C501C18CCFB73005FA2D2 /* TongvaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongvaData.m; sourceTree = "<group>"; };
+		153C3FA018CD0CD300E3E73C /* HillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillCell.h; sourceTree = "<group>"; };
+		153C3FA118CD0CD300E3E73C /* HillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillCell.m; sourceTree = "<group>"; };
+		153C3FA318CD0FCE00E3E73C /* HillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillViewController.h; sourceTree = "<group>"; };
+		153C3FA418CD0FCE00E3E73C /* HillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillViewController.m; sourceTree = "<group>"; };
+		153C3FA618CD113F00E3E73C /* PlantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantCell.h; sourceTree = "<group>"; };
+		153C3FA718CD113F00E3E73C /* PlantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantCell.m; sourceTree = "<group>"; };
+		153C3FA918CD237300E3E73C /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
+		153C3FAA18CD237300E3E73C /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
+		153C3FAC18CD244300E3E73C /* Hill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hill.h; sourceTree = "<group>"; };
+		153C3FAD18CD244300E3E73C /* Hill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hill.m; sourceTree = "<group>"; };
+		422C139B08FA4DBF8EFA8261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		468CD88FDAA64B24937796D4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +88,7 @@
 				152C4FE318CCFA59005FA2D2 /* CoreGraphics.framework in Frameworks */,
 				152C4FE518CCFA59005FA2D2 /* UIKit.framework in Frameworks */,
 				152C4FE118CCFA59005FA2D2 /* Foundation.framework in Frameworks */,
+				9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,7 @@
 				152C500818CCFA59005FA2D2 /* tongvaTests */,
 				152C4FDF18CCFA59005FA2D2 /* Frameworks */,
 				152C4FDE18CCFA59005FA2D2 /* Products */,
+				468CD88FDAA64B24937796D4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +132,7 @@
 				152C4FE218CCFA59005FA2D2 /* CoreGraphics.framework */,
 				152C4FE418CCFA59005FA2D2 /* UIKit.framework */,
 				152C500218CCFA59005FA2D2 /* XCTest.framework */,
+				422C139B08FA4DBF8EFA8261 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,10 +144,22 @@
 				152C4FF018CCFA59005FA2D2 /* AppDelegate.m */,
 				152C4FF218CCFA59005FA2D2 /* Main_iPhone.storyboard */,
 				152C4FF518CCFA59005FA2D2 /* Main_iPad.storyboard */,
-				152C4FF818CCFA59005FA2D2 /* ViewController.h */,
-				152C4FF918CCFA59005FA2D2 /* ViewController.m */,
+				152C4FF818CCFA59005FA2D2 /* HillsViewController.h */,
+				152C4FF918CCFA59005FA2D2 /* HillsViewController.m */,
 				152C4FFB18CCFA59005FA2D2 /* Images.xcassets */,
 				152C4FE718CCFA59005FA2D2 /* Supporting Files */,
+				152C501B18CCFB73005FA2D2 /* TongvaData.h */,
+				152C501C18CCFB73005FA2D2 /* TongvaData.m */,
+				153C3FA018CD0CD300E3E73C /* HillCell.h */,
+				153C3FA118CD0CD300E3E73C /* HillCell.m */,
+				153C3FA318CD0FCE00E3E73C /* HillViewController.h */,
+				153C3FA418CD0FCE00E3E73C /* HillViewController.m */,
+				153C3FA618CD113F00E3E73C /* PlantCell.h */,
+				153C3FA718CD113F00E3E73C /* PlantCell.m */,
+				153C3FA918CD237300E3E73C /* Plant.h */,
+				153C3FAA18CD237300E3E73C /* Plant.m */,
+				153C3FAC18CD244300E3E73C /* Hill.h */,
+				153C3FAD18CD244300E3E73C /* Hill.m */,
 			);
 			path = tongva;
 			sourceTree = "<group>";
@@ -131,6 +169,7 @@
 			children = (
 				152C4FE818CCFA59005FA2D2 /* tongva-Info.plist */,
 				152C4FE918CCFA59005FA2D2 /* InfoPlist.strings */,
+				152C501918CCFA9C005FA2D2 /* plants.geojson */,
 				152C4FEC18CCFA59005FA2D2 /* main.m */,
 				152C4FEE18CCFA59005FA2D2 /* tongva-Prefix.pch */,
 			);
@@ -162,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 152C501218CCFA59005FA2D2 /* Build configuration list for PBXNativeTarget "tongva" */;
 			buildPhases = (
+				9BA7999306074DBC845E91C8 /* Check Pods Manifest.lock */,
 				152C4FD918CCFA59005FA2D2 /* Sources */,
 				152C4FDA18CCFA59005FA2D2 /* Frameworks */,
 				152C4FDB18CCFA59005FA2D2 /* Resources */,
+				DD5056338E2E4EAEAC96183C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +275,7 @@
 				152C4FF718CCFA59005FA2D2 /* Main_iPad.storyboard in Resources */,
 				152C4FFC18CCFA59005FA2D2 /* Images.xcassets in Resources */,
 				152C4FF418CCFA59005FA2D2 /* Main_iPhone.storyboard in Resources */,
+				152C501A18CCFA9C005FA2D2 /* plants.geojson in Resources */,
 				152C4FEB18CCFA59005FA2D2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,12 +290,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BA7999306074DBC845E91C8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5056338E2E4EAEAC96183C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		152C4FD918CCFA59005FA2D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152C4FFA18CCFA59005FA2D2 /* ViewController.m in Sources */,
+				153C3FA818CD113F00E3E73C /* PlantCell.m in Sources */,
+				153C3FAB18CD237300E3E73C /* Plant.m in Sources */,
+				153C3FA218CD0CD300E3E73C /* HillCell.m in Sources */,
+				152C4FFA18CCFA59005FA2D2 /* HillsViewController.m in Sources */,
+				153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */,
+				152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */,
+				153C3FAE18CD244300E3E73C /* Hill.m in Sources */,
 				152C4FF118CCFA59005FA2D2 /* AppDelegate.m in Sources */,
 				152C4FED18CCFA59005FA2D2 /* main.m in Sources */,
 			);
@@ -389,6 +470,7 @@
 		};
 		152C501318CCFA59005FA2D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468CD88FDAA64B24937796D4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +484,7 @@
 		};
 		152C501418CCFA59005FA2D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468CD88FDAA64B24937796D4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -474,6 +557,7 @@
 				152C501418CCFA59005FA2D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		152C501518CCFA59005FA2D2 /* Build configuration list for PBXNativeTarget "tongvaTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +566,7 @@
 				152C501718CCFA59005FA2D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

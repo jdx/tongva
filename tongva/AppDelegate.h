@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TongvaData.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
