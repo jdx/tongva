@@ -10,6 +10,7 @@
 #import "UIImageView+AFNetworking.h"
 
 #import "Plant.h"
+#import "Image.h"
 
 @interface PlantCell : UICollectionViewCell
 

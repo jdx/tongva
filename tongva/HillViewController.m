@@ -59,6 +59,10 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     PlantCell *cell = (PlantCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    PlantViewController *plantVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PlantViewController"];
+    plantVC.plant = cell.plant;
+    [self.navigationController pushViewController:plantVC animated:YES];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 @end

@@ -45,20 +45,7 @@
     _plant = plant;
     _commonNameLabel.text = _plant.commonName;
     _latinNameLabel.text = _plant.latinName;
-    [_image setImageWithURL:_plant.imageURL placeholderImage:[self placeholder]];
-}
-
-- (UIImage *)placeholder
-{
-    CGRect rect = CGRectMake(0, 0, 1, 1);
-    // Create a 1 by 1 pixel context
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [UIColor.blackColor setFill];
-    UIRectFill(rect);   // Fill it with your color
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
+    [_image setImageWithURL:_plant.imageURL placeholderImage:[Image placeholder]];
 }
 
 - (Plant *)plant

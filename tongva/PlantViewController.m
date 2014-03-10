@@ -8,8 +8,9 @@
 
 #import "PlantViewController.h"
 
-@interface PlantViewController ()
-
+@interface PlantViewController () {
+    Plant *_plant;
+}
 @end
 
 @implementation PlantViewController
@@ -18,6 +19,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (Plant *)plant
+{
+    return _plant;
+}
+
+- (void)setPlant:(Plant *)plant
+{
+    [self view];
+    self.title = plant.commonName;
+    self.latinNameLabel.text = plant.latinName;
+    [self.imageView setImageWithURL:plant.imageURL placeholderImage:[Image placeholder]];
 }
 
 @end

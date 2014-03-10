@@ -10,6 +10,7 @@
 
 #import "PlantCell.h"
 #import "PlantTypeCollectionHeaderView.h"
+#import "PlantViewController.h"
 #import "Hill.h"
 
 @interface HillViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>

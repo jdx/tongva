@@ -31,6 +31,8 @@
 		153C3FB118CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */; };
 		153C3FB418CD447100E3E73C /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB318CD447100E3E73C /* PlantViewController.m */; };
 		153C3FB718CD477F00E3E73C /* HillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB618CD477F00E3E73C /* HillCell.m */; };
+		153C3FB918CD4F1200E3E73C /* Amaryllis belladonna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 153C3FB818CD4F1200E3E73C /* Amaryllis belladonna.jpg */; };
+		153C3FBC18CD552000E3E73C /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FBB18CD552000E3E73C /* Image.m */; };
 		9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C139B08FA4DBF8EFA8261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,9 @@
 		153C3FB318CD447100E3E73C /* PlantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantViewController.m; sourceTree = "<group>"; };
 		153C3FB518CD477F00E3E73C /* HillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillCell.h; sourceTree = "<group>"; };
 		153C3FB618CD477F00E3E73C /* HillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillCell.m; sourceTree = "<group>"; };
+		153C3FB818CD4F1200E3E73C /* Amaryllis belladonna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amaryllis belladonna.jpg"; sourceTree = "<group>"; };
+		153C3FBA18CD552000E3E73C /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		153C3FBB18CD552000E3E73C /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
 		422C139B08FA4DBF8EFA8261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		468CD88FDAA64B24937796D4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +172,8 @@
 				153C3FAF18CD3EB600E3E73C /* PlantTypeCollectionHeaderView.h */,
 				153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */,
 				153C3FB218CD447100E3E73C /* PlantViewController.h */,
+				153C3FBA18CD552000E3E73C /* Image.h */,
+				153C3FBB18CD552000E3E73C /* Image.m */,
 				153C3FB318CD447100E3E73C /* PlantViewController.m */,
 				153C3FB518CD477F00E3E73C /* HillCell.h */,
 				153C3FB618CD477F00E3E73C /* HillCell.m */,
@@ -177,6 +184,7 @@
 		152C4FE718CCFA59005FA2D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				153C3FB818CD4F1200E3E73C /* Amaryllis belladonna.jpg */,
 				152C4FE818CCFA59005FA2D2 /* tongva-Info.plist */,
 				152C4FE918CCFA59005FA2D2 /* InfoPlist.strings */,
 				152C501918CCFA9C005FA2D2 /* plants.geojson */,
@@ -283,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				152C4FF718CCFA59005FA2D2 /* Main_iPad.storyboard in Resources */,
+				153C3FB918CD4F1200E3E73C /* Amaryllis belladonna.jpg in Resources */,
 				152C4FFC18CCFA59005FA2D2 /* Images.xcassets in Resources */,
 				152C4FF418CCFA59005FA2D2 /* Main_iPhone.storyboard in Resources */,
 				152C501A18CCFA9C005FA2D2 /* plants.geojson in Resources */,
@@ -347,6 +356,7 @@
 				153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */,
 				152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */,
 				153C3FAE18CD244300E3E73C /* Hill.m in Sources */,
+				153C3FBC18CD552000E3E73C /* Image.m in Sources */,
 				152C4FF118CCFA59005FA2D2 /* AppDelegate.m in Sources */,
 				152C4FED18CCFA59005FA2D2 /* main.m in Sources */,
 			);
