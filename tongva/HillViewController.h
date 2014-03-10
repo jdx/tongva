@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TongvaData.h"
+
 #import "PlantCell.h"
+#import "PlantTypeCollectionHeaderView.h"
 #import "Hill.h"
 
-@interface HillViewController : UICollectionViewController <UICollectionViewDataSource>
+@interface HillViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property Hill *hill;
 

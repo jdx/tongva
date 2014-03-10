@@ -1,5 +1,5 @@
 //
-//  HillCell.h
+//  PlantTypeCollectionHeaderView.h
 //  tongva
 //
 //  Created by Jeff Dickey on 3/9/14.
@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Plant.H"
 
-#import "Hill.h"
+@interface PlantTypeCollectionHeaderView : UICollectionReusableView
 
-@interface HillCell : UICollectionViewCell
+- (NSArray *)plantType;
+- (void)setPlantType:(NSArray *)plantType;
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
-
-- (Hill *)hill;
-- (void)setHill:(Hill *)hill;
 
 @end

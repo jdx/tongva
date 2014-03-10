@@ -1,4 +1,3 @@
-
 //
 //  HillCell.m
 //  tongva
@@ -9,19 +8,32 @@
 
 #import "HillCell.h"
 
+@interface HillCell() {
+    Hill *_hill;
+}
+
+@end
+
 @implementation HillCell
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = UIColor.whiteColor;
-        self.label = [[UILabel alloc] initWithFrame:self.bounds];
-        self.label.font = [self.label.font fontWithSize:25];
-        self.label.textColor = [UIColor blackColor];
-        [self addSubview:self.label];
+        // Initialization code
     }
     return self;
+}
+
+- (Hill *)hill
+{
+    return _hill;
+}
+
+- (void)setHill:(Hill *)hill
+{
+    _hill = hill;
+    self.label.text = hill.name;
 }
 
 @end

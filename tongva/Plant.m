@@ -24,9 +24,24 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"<Plant: %@ %@>", self.type, self.latinName];
+}
+
+- (NSString *)type
+{
+    return _dict[@"Type"];
+}
+
 - (NSString *)commonName
 {
     return _dict[@"CommonName"];
+}
+
+- (NSString *)latinName
+{
+    return _dict[@"LatinName"];
 }
 
 - (NSURL *)imageURL

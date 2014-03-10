@@ -10,24 +10,32 @@
 
 @interface PlantCell() {
     Plant *_plant;
+    UIImageView *_image;
+    UILabel *_commonNameLabel;
+    UILabel *_latinNameLabel;
 }
 @end
 
 @implementation PlantCell
 
-UIImageView *_image;
-UILabel *_label;
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _label = [[UILabel alloc] initWithFrame:self.bounds];
-        _label.textColor = UIColor.whiteColor;
-        [self addSubview:_label];
-        
-        _image = [[UIImageView alloc] initWithFrame:self.bounds];
+        _image = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, frame.size.width, frame.size.height/10*8)];
+        _image.contentMode = UIViewContentModeScaleAspectFill;
+        _image.clipsToBounds = YES;
         [self addSubview:_image];
+
+        _commonNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, frame.size.height/10*8, frame.size.width, frame.size.height/10)];
+        _commonNameLabel.textColor = UIColor.whiteColor;
+        _commonNameLabel.font = [_commonNameLabel.font fontWithSize:15];
+        [self addSubview:_commonNameLabel];
+        
+        _latinNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, frame.size.height/10*9, frame.size.width, frame.size.height/10)];
+        _latinNameLabel.textColor = UIColor.whiteColor;
+        _latinNameLabel.font = [_latinNameLabel.font fontWithSize:15];
+        [self addSubview:_latinNameLabel];
     }
     return self;
 }
@@ -35,8 +43,22 @@ UILabel *_label;
 - (void)setPlant:(Plant *)plant
 {
     _plant = plant;
-    _label.text = _plant.commonName;
-    [_image setImageWithURL:_plant.imageURL];
+    _commonNameLabel.text = _plant.commonName;
+    _latinNameLabel.text = _plant.latinName;
+    [_image setImageWithURL:_plant.imageURL placeholderImage:[self placeholder]];
+}
+
+- (UIImage *)placeholder
+{
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    // Create a 1 by 1 pixel context
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    [UIColor.blackColor setFill];
+    UIRectFill(rect);   // Fill it with your color
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 - (Plant *)plant

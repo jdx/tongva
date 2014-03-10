@@ -13,6 +13,8 @@
 - (Plant *)initWithDict:(NSDictionary *)dict;
 
 - (NSString *)commonName;
+- (NSString *)latinName;
+- (NSString *)type;
 - (NSURL *)imageURL;
 
 @end

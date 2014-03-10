@@ -10,8 +10,6 @@
 
 @interface HillsViewController ()
 
-- (Hill *)selectedHill;
-
 @end
 
 @implementation HillsViewController
@@ -19,15 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Tongva Park";
-    [self.collectionView registerClass:[HillCell class] forCellWithReuseIdentifier:@"HillCell"];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    HillCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"HillCell" forIndexPath:indexPath];
-    cell.label.text = [Hill.hills[indexPath.row] name];
-    return cell;
+    return CGSizeMake(self.view.bounds.size.width, 70);
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -35,9 +29,11 @@
     return Hill.hills.count;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.view.bounds.size.width, 70);
+    HillCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HillCell" forIndexPath:indexPath];
+    cell.hill = Hill.hills[indexPath.row];
+    return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath

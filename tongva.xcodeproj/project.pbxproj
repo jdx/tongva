@@ -24,11 +24,13 @@
 		152C500F18CCFA59005FA2D2 /* tongvaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C500E18CCFA59005FA2D2 /* tongvaTests.m */; };
 		152C501A18CCFA9C005FA2D2 /* plants.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 152C501918CCFA9C005FA2D2 /* plants.geojson */; };
 		152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C501C18CCFB73005FA2D2 /* TongvaData.m */; };
-		153C3FA218CD0CD300E3E73C /* HillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA118CD0CD300E3E73C /* HillCell.m */; };
 		153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA418CD0FCE00E3E73C /* HillViewController.m */; };
 		153C3FA818CD113F00E3E73C /* PlantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA718CD113F00E3E73C /* PlantCell.m */; };
 		153C3FAB18CD237300E3E73C /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FAA18CD237300E3E73C /* Plant.m */; };
 		153C3FAE18CD244300E3E73C /* Hill.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FAD18CD244300E3E73C /* Hill.m */; };
+		153C3FB118CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */; };
+		153C3FB418CD447100E3E73C /* PlantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB318CD447100E3E73C /* PlantViewController.m */; };
+		153C3FB718CD477F00E3E73C /* HillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB618CD477F00E3E73C /* HillCell.m */; };
 		9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C139B08FA4DBF8EFA8261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +68,6 @@
 		152C501918CCFA9C005FA2D2 /* plants.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plants.geojson; sourceTree = "<group>"; };
 		152C501B18CCFB73005FA2D2 /* TongvaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongvaData.h; sourceTree = "<group>"; };
 		152C501C18CCFB73005FA2D2 /* TongvaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongvaData.m; sourceTree = "<group>"; };
-		153C3FA018CD0CD300E3E73C /* HillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillCell.h; sourceTree = "<group>"; };
-		153C3FA118CD0CD300E3E73C /* HillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillCell.m; sourceTree = "<group>"; };
 		153C3FA318CD0FCE00E3E73C /* HillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillViewController.h; sourceTree = "<group>"; };
 		153C3FA418CD0FCE00E3E73C /* HillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillViewController.m; sourceTree = "<group>"; };
 		153C3FA618CD113F00E3E73C /* PlantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantCell.h; sourceTree = "<group>"; };
@@ -76,6 +76,12 @@
 		153C3FAA18CD237300E3E73C /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
 		153C3FAC18CD244300E3E73C /* Hill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hill.h; sourceTree = "<group>"; };
 		153C3FAD18CD244300E3E73C /* Hill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hill.m; sourceTree = "<group>"; };
+		153C3FAF18CD3EB600E3E73C /* PlantTypeCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantTypeCollectionHeaderView.h; sourceTree = "<group>"; };
+		153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantTypeCollectionHeaderView.m; sourceTree = "<group>"; };
+		153C3FB218CD447100E3E73C /* PlantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantViewController.h; sourceTree = "<group>"; };
+		153C3FB318CD447100E3E73C /* PlantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantViewController.m; sourceTree = "<group>"; };
+		153C3FB518CD477F00E3E73C /* HillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HillCell.h; sourceTree = "<group>"; };
+		153C3FB618CD477F00E3E73C /* HillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillCell.m; sourceTree = "<group>"; };
 		422C139B08FA4DBF8EFA8261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		468CD88FDAA64B24937796D4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,8 +156,6 @@
 				152C4FE718CCFA59005FA2D2 /* Supporting Files */,
 				152C501B18CCFB73005FA2D2 /* TongvaData.h */,
 				152C501C18CCFB73005FA2D2 /* TongvaData.m */,
-				153C3FA018CD0CD300E3E73C /* HillCell.h */,
-				153C3FA118CD0CD300E3E73C /* HillCell.m */,
 				153C3FA318CD0FCE00E3E73C /* HillViewController.h */,
 				153C3FA418CD0FCE00E3E73C /* HillViewController.m */,
 				153C3FA618CD113F00E3E73C /* PlantCell.h */,
@@ -160,6 +164,12 @@
 				153C3FAA18CD237300E3E73C /* Plant.m */,
 				153C3FAC18CD244300E3E73C /* Hill.h */,
 				153C3FAD18CD244300E3E73C /* Hill.m */,
+				153C3FAF18CD3EB600E3E73C /* PlantTypeCollectionHeaderView.h */,
+				153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */,
+				153C3FB218CD447100E3E73C /* PlantViewController.h */,
+				153C3FB318CD447100E3E73C /* PlantViewController.m */,
+				153C3FB518CD477F00E3E73C /* HillCell.h */,
+				153C3FB618CD477F00E3E73C /* HillCell.m */,
 			);
 			path = tongva;
 			sourceTree = "<group>";
@@ -329,9 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				153C3FA818CD113F00E3E73C /* PlantCell.m in Sources */,
+				153C3FB118CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m in Sources */,
 				153C3FAB18CD237300E3E73C /* Plant.m in Sources */,
-				153C3FA218CD0CD300E3E73C /* HillCell.m in Sources */,
+				153C3FB718CD477F00E3E73C /* HillCell.m in Sources */,
 				152C4FFA18CCFA59005FA2D2 /* HillsViewController.m in Sources */,
+				153C3FB418CD447100E3E73C /* PlantViewController.m in Sources */,
 				153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */,
 				152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */,
 				153C3FAE18CD244300E3E73C /* Hill.m in Sources */,

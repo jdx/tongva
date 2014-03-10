@@ -8,7 +8,8 @@
 
 #import "HillViewController.h"
 
-@interface HillViewController ()
+@interface HillViewController () {
+}
 
 @end
 
@@ -21,7 +22,7 @@
     [self.collectionView registerClass:[PlantCell class] forCellWithReuseIdentifier:@"PlantCell"];
 }
 
-- (NSInteger)numberOfSections:(NSInteger)section
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return self.hill.plantTypes.count;
 }
@@ -29,6 +30,18 @@
 - (NSInteger)collectionView:(UICollectionView *)cv numberOfItemsInSection:(NSInteger)section
 {
     return [self.hill.plantTypes[section] count];
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    if (kind == UICollectionElementKindSectionHeader) {
+        PlantTypeCollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"PlantTypeHeader" forIndexPath:indexPath];
+        headerView.plantType = self.hill.plantTypes[indexPath.section];
+        return headerView;
+    } else {
+        UICollectionReusableView* footerView = [collectionView dequeueReusableSupplementaryViewOfKind: UICollectionElementKindSectionFooter withReuseIdentifier:@"PlantTypeFooter" forIndexPath:indexPath ];
+        return footerView;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -40,7 +53,12 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((self.view.bounds.size.width/2) - 10, 100);
+    return CGSizeMake(self.view.bounds.size.width, 200);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PlantCell *cell = (PlantCell *)[collectionView cellForItemAtIndexPath:indexPath];
 }
 
 @end

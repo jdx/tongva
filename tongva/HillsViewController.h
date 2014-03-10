@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TongvaData.h"
-#import "HillCell.h"
+
 #import "HillViewController.h"
+#import "Hill.h"
+#import "HilLCell.h"
 
 @interface HillsViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
