@@ -48,7 +48,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Tongva Park" id="XKb-vr-aLx"/>
                     <connections>
-                        <segue destination="Bll-kU-H29" kind="push" identifier="showPlant" id="S3Z-3x-VxN"/>
+                        <segue destination="8km-kH-Z9J" kind="push" identifier="showPlant" id="F6X-SF-Hoh"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZv-EE-Afx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -56,9 +56,9 @@
             <point key="canvasLocation" x="175" y="83"/>
         </scene>
         <!--Hill View Controller-->
-        <scene sceneID="2dQ-cY-9Xf">
+        <scene sceneID="apz-wO-ZHn">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Bll-kU-H29" customClass="HillViewController" sceneMemberID="viewController">
+                <viewController id="8km-kH-Z9J" customClass="HillViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="y8n-Id-LvO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flowers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-XX-W6C">
-                                    <rect key="frame" x="20" y="14" width="300" height="21"/>
+                                    <rect key="frame" x="20" y="0.0" width="300" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,17 +157,15 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="Bll-kU-H29" id="hQO-Nh-56B"/>
-                            <outlet property="delegate" destination="Bll-kU-H29" id="UxN-VI-gWd"/>
+                            <outlet property="dataSource" destination="8km-kH-Z9J" id="iwe-BF-fdC"/>
+                            <outlet property="delegate" destination="8km-kH-Z9J" id="lyG-yR-uBA"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="HV3-Ey-TQS">
-                        <barButtonItem key="backBarButtonItem" title="Hills" id="J6R-Eq-jn3"/>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UTt-vQ-tat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationItem key="navigationItem" id="qjm-A4-VME"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6N-bb-VbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="83"/>
+            <point key="canvasLocation" x="599" y="83"/>
         </scene>
         <!--Plant View Controller-->
         <scene sceneID="ZM1-H2-bcB">
@@ -186,22 +184,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu8-Vi-Lcb">
-                                <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                                <rect key="frame" x="0.0" y="473" width="320" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amaryllis belladonna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-J9-gm9">
-                                        <rect key="frame" x="20" y="8" width="280" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Naked Lady" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-J9-gm9">
+                                        <rect key="frame" x="20" y="9" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amaryllis belladonna" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-vu-Nym">
+                                        <rect key="frame" x="20" y="37" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Bulb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxL-kE-XV8">
-                                        <rect key="frame" x="20" y="37" width="280" height="21"/>
+                                        <rect key="frame" x="20" y="66" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="nza-IG-3Xe"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -209,13 +211,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="UmJ-J9-gm9" firstAttribute="top" secondItem="Iu8-Vi-Lcb" secondAttribute="top" constant="8" id="FMG-ca-aTL"/>
-                                    <constraint firstItem="sxL-kE-XV8" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="Fc9-tn-FuE"/>
-                                    <constraint firstItem="UmJ-J9-gm9" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="KZh-Fu-lMs"/>
-                                    <constraint firstAttribute="trailing" secondItem="UmJ-J9-gm9" secondAttribute="trailing" constant="20" id="jDX-x4-GTX"/>
-                                    <constraint firstItem="sxL-kE-XV8" firstAttribute="top" secondItem="UmJ-J9-gm9" secondAttribute="bottom" constant="8" id="sim-jO-xfV"/>
-                                    <constraint firstAttribute="bottom" secondItem="sxL-kE-XV8" secondAttribute="bottom" constant="8" id="uUv-WT-8Tl"/>
-                                    <constraint firstAttribute="trailing" secondItem="sxL-kE-XV8" secondAttribute="trailing" constant="20" id="v1k-yu-qps"/>
+                                    <constraint firstItem="UmJ-J9-gm9" firstAttribute="top" secondItem="Iu8-Vi-Lcb" secondAttribute="top" constant="8" id="2LZ-Vh-vNJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="K5I-vu-Nym" secondAttribute="trailing" constant="20" id="BAD-2H-M2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="UmJ-J9-gm9" secondAttribute="trailing" constant="20" id="ECz-bU-8cH"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxL-kE-XV8" secondAttribute="trailing" constant="20" id="JXm-9a-Jw7"/>
+                                    <constraint firstItem="K5I-vu-Nym" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="JxV-wl-NkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sxL-kE-XV8" secondAttribute="bottom" constant="8" id="REg-hg-jTM"/>
+                                    <constraint firstItem="sxL-kE-XV8" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="Xg0-aX-IeQ"/>
+                                    <constraint firstItem="sxL-kE-XV8" firstAttribute="top" secondItem="K5I-vu-Nym" secondAttribute="bottom" constant="8" id="gYm-kw-heq"/>
+                                    <constraint firstItem="UmJ-J9-gm9" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="kmT-7n-sG8"/>
+                                    <constraint firstItem="K5I-vu-Nym" firstAttribute="top" secondItem="UmJ-J9-gm9" secondAttribute="bottom" constant="8" id="xsA-F3-Rwx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -232,8 +237,9 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="commonNameLabel" destination="UmJ-J9-gm9" id="Tei-0a-QfZ"/>
                         <outlet property="imageView" destination="W7f-70-Mts" id="b3o-iO-MZh"/>
-                        <outlet property="latinNameLabel" destination="UmJ-J9-gm9" id="asp-bC-0iI"/>
+                        <outlet property="latinNameLabel" destination="K5I-vu-Nym" id="RjE-RL-8dq"/>
                         <outlet property="typeLabel" destination="sxL-kE-XV8" id="czE-Mm-XQh"/>
                     </connections>
                 </viewController>
@@ -245,9 +251,13 @@
         <scene sceneID="dSt-fl-lq1">
             <objects>
                 <navigationController definesPresentationContext="YES" id="kSe-x0-wbV" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8NM-fD-t2d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorTransitionMaskImage="Amaryllis belladonna.jpg" id="8NM-fD-t2d">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xmr-Dy-enN">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Gk8-CO-CKg" kind="relationship" relationship="rootViewController" id="eC2-hY-8Ch"/>
                     </connections>

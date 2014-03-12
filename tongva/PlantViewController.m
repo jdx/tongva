@@ -30,7 +30,9 @@
 {
     [self view];
     self.title = plant.commonName;
+    self.commonNameLabel.text = plant.commonName;
     self.latinNameLabel.text = plant.latinName;
+    self.typeLabel.text = plant.type;
     [self.imageView setImageWithURL:plant.imageURL placeholderImage:[Image placeholder]];
 }
 

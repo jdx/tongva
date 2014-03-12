@@ -17,8 +17,9 @@
 - (Plant *)plant;
 - (void)setPlant:(Plant *)plant;
 
-@property (weak, nonatomic) IBOutlet UILabel *latinNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *commonNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *latinNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *typeLabel;
 
 @end

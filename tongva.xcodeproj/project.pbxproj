@@ -21,7 +21,6 @@
 		152C500418CCFA59005FA2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C4FE018CCFA59005FA2D2 /* Foundation.framework */; };
 		152C500518CCFA59005FA2D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152C4FE418CCFA59005FA2D2 /* UIKit.framework */; };
 		152C500D18CCFA59005FA2D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152C500B18CCFA59005FA2D2 /* InfoPlist.strings */; };
-		152C500F18CCFA59005FA2D2 /* tongvaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C500E18CCFA59005FA2D2 /* tongvaTests.m */; };
 		152C501A18CCFA9C005FA2D2 /* plants.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 152C501918CCFA9C005FA2D2 /* plants.geojson */; };
 		152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 152C501C18CCFB73005FA2D2 /* TongvaData.m */; };
 		153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FA418CD0FCE00E3E73C /* HillViewController.m */; };
@@ -33,6 +32,8 @@
 		153C3FB718CD477F00E3E73C /* HillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FB618CD477F00E3E73C /* HillCell.m */; };
 		153C3FB918CD4F1200E3E73C /* Amaryllis belladonna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 153C3FB818CD4F1200E3E73C /* Amaryllis belladonna.jpg */; };
 		153C3FBC18CD552000E3E73C /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FBB18CD552000E3E73C /* Image.m */; };
+		1568661118CFE2E400329524 /* PlantTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1568661018CFE2E400329524 /* PlantTest.m */; };
+		159A33A318CFEFCF001D5ED9 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A33A218CFEFCF001D5ED9 /* NavigationViewController.m */; };
 		9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C139B08FA4DBF8EFA8261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +67,6 @@
 		152C500218CCFA59005FA2D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		152C500A18CCFA59005FA2D2 /* tongvaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tongvaTests-Info.plist"; sourceTree = "<group>"; };
 		152C500C18CCFA59005FA2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		152C500E18CCFA59005FA2D2 /* tongvaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tongvaTests.m; sourceTree = "<group>"; };
 		152C501918CCFA9C005FA2D2 /* plants.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plants.geojson; sourceTree = "<group>"; };
 		152C501B18CCFB73005FA2D2 /* TongvaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongvaData.h; sourceTree = "<group>"; };
 		152C501C18CCFB73005FA2D2 /* TongvaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongvaData.m; sourceTree = "<group>"; };
@@ -87,6 +87,9 @@
 		153C3FB818CD4F1200E3E73C /* Amaryllis belladonna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amaryllis belladonna.jpg"; sourceTree = "<group>"; };
 		153C3FBA18CD552000E3E73C /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
 		153C3FBB18CD552000E3E73C /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		1568661018CFE2E400329524 /* PlantTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlantTest.m; path = tongvaTests/PlantTest.m; sourceTree = SOURCE_ROOT; };
+		159A33A118CFEFCF001D5ED9 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		159A33A218CFEFCF001D5ED9 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		422C139B08FA4DBF8EFA8261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		468CD88FDAA64B24937796D4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,30 +156,32 @@
 			children = (
 				152C4FEF18CCFA59005FA2D2 /* AppDelegate.h */,
 				152C4FF018CCFA59005FA2D2 /* AppDelegate.m */,
-				152C4FF218CCFA59005FA2D2 /* Main_iPhone.storyboard */,
-				152C4FF518CCFA59005FA2D2 /* Main_iPad.storyboard */,
-				152C4FF818CCFA59005FA2D2 /* HillsViewController.h */,
-				152C4FF918CCFA59005FA2D2 /* HillsViewController.m */,
-				152C4FFB18CCFA59005FA2D2 /* Images.xcassets */,
-				152C4FE718CCFA59005FA2D2 /* Supporting Files */,
-				152C501B18CCFB73005FA2D2 /* TongvaData.h */,
-				152C501C18CCFB73005FA2D2 /* TongvaData.m */,
-				153C3FA318CD0FCE00E3E73C /* HillViewController.h */,
-				153C3FA418CD0FCE00E3E73C /* HillViewController.m */,
-				153C3FA618CD113F00E3E73C /* PlantCell.h */,
-				153C3FA718CD113F00E3E73C /* PlantCell.m */,
-				153C3FA918CD237300E3E73C /* Plant.h */,
-				153C3FAA18CD237300E3E73C /* Plant.m */,
 				153C3FAC18CD244300E3E73C /* Hill.h */,
 				153C3FAD18CD244300E3E73C /* Hill.m */,
+				153C3FB518CD477F00E3E73C /* HillCell.h */,
+				153C3FB618CD477F00E3E73C /* HillCell.m */,
+				152C4FF818CCFA59005FA2D2 /* HillsViewController.h */,
+				152C4FF918CCFA59005FA2D2 /* HillsViewController.m */,
+				153C3FA318CD0FCE00E3E73C /* HillViewController.h */,
+				153C3FA418CD0FCE00E3E73C /* HillViewController.m */,
+				153C3FBA18CD552000E3E73C /* Image.h */,
+				153C3FBB18CD552000E3E73C /* Image.m */,
+				152C4FFB18CCFA59005FA2D2 /* Images.xcassets */,
+				152C4FF518CCFA59005FA2D2 /* Main_iPad.storyboard */,
+				152C4FF218CCFA59005FA2D2 /* Main_iPhone.storyboard */,
+				159A33A118CFEFCF001D5ED9 /* NavigationViewController.h */,
+				159A33A218CFEFCF001D5ED9 /* NavigationViewController.m */,
+				153C3FA918CD237300E3E73C /* Plant.h */,
+				153C3FAA18CD237300E3E73C /* Plant.m */,
+				153C3FA618CD113F00E3E73C /* PlantCell.h */,
+				153C3FA718CD113F00E3E73C /* PlantCell.m */,
 				153C3FAF18CD3EB600E3E73C /* PlantTypeCollectionHeaderView.h */,
 				153C3FB018CD3EB600E3E73C /* PlantTypeCollectionHeaderView.m */,
 				153C3FB218CD447100E3E73C /* PlantViewController.h */,
-				153C3FBA18CD552000E3E73C /* Image.h */,
-				153C3FBB18CD552000E3E73C /* Image.m */,
 				153C3FB318CD447100E3E73C /* PlantViewController.m */,
-				153C3FB518CD477F00E3E73C /* HillCell.h */,
-				153C3FB618CD477F00E3E73C /* HillCell.m */,
+				152C4FE718CCFA59005FA2D2 /* Supporting Files */,
+				152C501B18CCFB73005FA2D2 /* TongvaData.h */,
+				152C501C18CCFB73005FA2D2 /* TongvaData.m */,
 			);
 			path = tongva;
 			sourceTree = "<group>";
@@ -197,7 +202,7 @@
 		152C500818CCFA59005FA2D2 /* tongvaTests */ = {
 			isa = PBXGroup;
 			children = (
-				152C500E18CCFA59005FA2D2 /* tongvaTests.m */,
+				1568661018CFE2E400329524 /* PlantTest.m */,
 				152C500918CCFA59005FA2D2 /* Supporting Files */,
 			);
 			path = tongvaTests;
@@ -354,6 +359,7 @@
 				152C4FFA18CCFA59005FA2D2 /* HillsViewController.m in Sources */,
 				153C3FB418CD447100E3E73C /* PlantViewController.m in Sources */,
 				153C3FA518CD0FCE00E3E73C /* HillViewController.m in Sources */,
+				159A33A318CFEFCF001D5ED9 /* NavigationViewController.m in Sources */,
 				152C501D18CCFB73005FA2D2 /* TongvaData.m in Sources */,
 				153C3FAE18CD244300E3E73C /* Hill.m in Sources */,
 				153C3FBC18CD552000E3E73C /* Image.m in Sources */,
@@ -366,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152C500F18CCFA59005FA2D2 /* tongvaTests.m in Sources */,
+				1568661118CFE2E400329524 /* PlantTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
 #import "PlantViewController.h"
 #import "Hill.h"
 
-@interface HillViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HillViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property Hill *hill;
 

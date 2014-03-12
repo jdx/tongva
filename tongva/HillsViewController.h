@@ -10,7 +10,7 @@
 
 #import "HillViewController.h"
 #import "Hill.h"
-#import "HilLCell.h"
+#import "HillCell.h"
 
 @interface HillsViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
