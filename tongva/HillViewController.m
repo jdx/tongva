@@ -19,7 +19,6 @@
 {
     [super viewDidLoad];
     self.title = self.hill.name;
-    [self.collectionView registerClass:[PlantCell class] forCellWithReuseIdentifier:@"PlantCell"];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
