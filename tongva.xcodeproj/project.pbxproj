@@ -34,6 +34,10 @@
 		153C3FBC18CD552000E3E73C /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 153C3FBB18CD552000E3E73C /* Image.m */; };
 		1568661118CFE2E400329524 /* PlantTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1568661018CFE2E400329524 /* PlantTest.m */; };
 		159A33A318CFEFCF001D5ED9 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159A33A218CFEFCF001D5ED9 /* NavigationViewController.m */; };
+		159A4A1818D24EDD0088F4BD /* HillTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6018E18D24CFB004D8CC2 /* HillTest.m */; };
+		15A6018D18D24A06004D8CC2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A6018C18D24A06004D8CC2 /* MapKit.framework */; };
+		15A6018F18D24CFB004D8CC2 /* HillTest.m in Resources */ = {isa = PBXBuildFile; fileRef = 15A6018E18D24CFB004D8CC2 /* HillTest.m */; };
+		15FF03EF18D20CCC00527998 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FF03EE18D20CCC00527998 /* CoreLocation.framework */; };
 		9BF14ABC9A27467FB1BF8A9F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422C139B08FA4DBF8EFA8261 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +94,10 @@
 		1568661018CFE2E400329524 /* PlantTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlantTest.m; path = tongvaTests/PlantTest.m; sourceTree = SOURCE_ROOT; };
 		159A33A118CFEFCF001D5ED9 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		159A33A218CFEFCF001D5ED9 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		15A6018C18D24A06004D8CC2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		15A6018E18D24CFB004D8CC2 /* HillTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HillTest.m; sourceTree = "<group>"; };
+		15A6019018D24D8E004D8CC2 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		15FF03EE18D20CCC00527998 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		422C139B08FA4DBF8EFA8261 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		468CD88FDAA64B24937796D4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A6018D18D24A06004D8CC2 /* MapKit.framework in Frameworks */,
+				15FF03EF18D20CCC00527998 /* CoreLocation.framework in Frameworks */,
 				152C4FE318CCFA59005FA2D2 /* CoreGraphics.framework in Frameworks */,
 				152C4FE518CCFA59005FA2D2 /* UIKit.framework in Frameworks */,
 				152C4FE118CCFA59005FA2D2 /* Foundation.framework in Frameworks */,
@@ -142,6 +152,9 @@
 		152C4FDF18CCFA59005FA2D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15A6019018D24D8E004D8CC2 /* libPods.a */,
+				15A6018C18D24A06004D8CC2 /* MapKit.framework */,
+				15FF03EE18D20CCC00527998 /* CoreLocation.framework */,
 				152C4FE018CCFA59005FA2D2 /* Foundation.framework */,
 				152C4FE218CCFA59005FA2D2 /* CoreGraphics.framework */,
 				152C4FE418CCFA59005FA2D2 /* UIKit.framework */,
@@ -203,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				1568661018CFE2E400329524 /* PlantTest.m */,
+				15A6018E18D24CFB004D8CC2 /* HillTest.m */,
 				152C500918CCFA59005FA2D2 /* Supporting Files */,
 			);
 			path = tongvaTests;
@@ -263,7 +277,7 @@
 		152C4FD518CCFA58005FA2D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dickeyxxx;
 				TargetAttributes = {
 					152C500018CCFA59005FA2D2 = {
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				152C500D18CCFA59005FA2D2 /* InfoPlist.strings in Resources */,
+				15A6018F18D24CFB004D8CC2 /* HillTest.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159A4A1818D24EDD0088F4BD /* HillTest.m in Sources */,
 				1568661118CFE2E400329524 /* PlantTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +440,9 @@
 /* Begin XCBuildConfiguration section */
 		152C501018CCFA59005FA2D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468CD88FDAA64B24937796D4 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -466,7 +482,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -526,8 +541,8 @@
 		};
 		152C501618CCFA59005FA2D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468CD88FDAA64B24937796D4 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tongva.app/tongva";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -541,6 +556,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "tongvaTests/tongvaTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -550,7 +569,6 @@
 		152C501718CCFA59005FA2D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tongva.app/tongva";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -560,6 +578,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tongva/tongva-Prefix.pch";
 				INFOPLIST_FILE = "tongvaTests/tongvaTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

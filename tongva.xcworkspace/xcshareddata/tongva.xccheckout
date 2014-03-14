@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FFD1A89B-314E-41A6-BFC0-53B32A8E077B</string>
+	<string>F2296FC5-987C-41C0-A9A8-3888EC510ED7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>tongva</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A3D45CBE-B79E-4DFD-B380-75B52787B51F</key>
-		<string>ssh://github.com/dickeyxxx/tongva.git</string>
+		<key>D5C9DEB9-3C58-483C-8C81-B4499D859B6D</key>
+		<string>ssh://github.com/dickeyxxx/tongva</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>tongva.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A3D45CBE-B79E-4DFD-B380-75B52787B51F</key>
+		<key>D5C9DEB9-3C58-483C-8C81-B4499D859B6D</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/dickeyxxx/tongva.git</string>
+	<string>ssh://github.com/dickeyxxx/tongva</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A3D45CBE-B79E-4DFD-B380-75B52787B51F</string>
+	<string>D5C9DEB9-3C58-483C-8C81-B4499D859B6D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A3D45CBE-B79E-4DFD-B380-75B52787B51F</string>
+			<string>D5C9DEB9-3C58-483C-8C81-B4499D859B6D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>tongva</string>
 		</dict>

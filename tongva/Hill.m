@@ -10,6 +10,7 @@
 
 @interface Hill() {
     NSDictionary *_dict;
+    MKPolygon *_polygon;
 }
 @end
 
@@ -54,6 +55,26 @@
         .unwrap;
     })
     .unwrap;
+}
+
+- (MKPolygon *)polygon
+{
+    if (!_polygon) {
+        NSArray *coordinates = _dict[@"geometry"][@"coordinates"][0];
+        CLLocationCoordinate2D *ccoordinates = calloc(coordinates.count, sizeof(CLLocationCoordinate2D));
+        for (int i=0; i<coordinates.count; i++) {
+            CLLocationCoordinate2D c = CLLocationCoordinate2DMake([coordinates[i][1] floatValue], [coordinates[i][0] floatValue]);
+            ccoordinates[i] = c;
+        }
+        _polygon = [MKPolygon polygonWithCoordinates:ccoordinates count:coordinates.count];
+    }
+    return _polygon;
+}
+
+- (BOOL)isLocationOnHill:(CLLocationCoordinate2D)loc
+{
+    MKMapRect rect = MKMapRectMake(loc.latitude, loc.longitude, 0, 0);
+    return [self.polygon intersectsMapRect:rect];
 }
 
 @end

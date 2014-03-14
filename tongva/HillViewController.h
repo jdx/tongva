@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 #import "PlantCell.h"
 #import "PlantTypeCollectionHeaderView.h"
 #import "PlantViewController.h"
 #import "Hill.h"
 
-@interface HillViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HillViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, CLLocationManagerDelegate>
 
 @property Hill *hill;
 

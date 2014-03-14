@@ -15,10 +15,19 @@
 
 @implementation HillViewController
 
+static CLLocationManager *sharedLocationManager;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = self.hill.name;
+    self.locationManager.delegate = self;
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.locationManager.delegate = nil;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -62,6 +71,19 @@
     plantVC.plant = cell.plant;
     [self.navigationController pushViewController:plantVC animated:YES];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+}
+
+- (CLLocationManager *)locationManager
+{
+    if (!sharedLocationManager) {
+        sharedLocationManager = [[CLLocationManager alloc] init];
+    }
+    return sharedLocationManager;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *loc = locations[0];
+    NSLog(@"%d", [self.hill isLocationOnHill:loc.coordinate]);
 }
 
 @end

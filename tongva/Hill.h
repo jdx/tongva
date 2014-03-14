@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 #import "Underscore.h"
 #define _ Underscore
@@ -18,7 +19,10 @@
 
 + (NSArray *)hills;
 
+- (Hill *)initWithDict:(NSDictionary *)dict;
+
 - (NSString *)name;
 - (NSArray *)plantTypes;
+- (BOOL)isLocationOnHill:(CLLocationCoordinate2D)loc;
 
 @end
