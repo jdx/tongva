@@ -12,10 +12,14 @@
 #import "Plant.h"
 #import "image.h"
 
-@interface PlantViewController : UIViewController
+@interface PlantViewController : UIViewController {
+    Plant *_plant;
+}
 
 - (Plant *)plant;
 - (void)setPlant:(Plant *)plant;
+
+- (IBAction)moreInfoClicked;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *commonNameLabel;

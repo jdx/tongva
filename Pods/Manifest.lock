@@ -18,14 +18,17 @@ PODS:
   - AFNetworking/UIKit (2.2.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - HockeySDK (3.5.4)
   - Underscore.m (0.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.0)
+  - HockeySDK (~> 3.5.4)
   - Underscore.m (~> 0.2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: e8cfd8f3fe3bfe19124a0cc63f4d45752d892a56
+  HockeySDK: 4f7f7e15c1f594e8ca1e16a09f04e7418289de7a
   Underscore.m: 593ea54a19d3cc4439387a83d36eb7ba6ffd1707
 
 COCOAPODS: 0.29.0

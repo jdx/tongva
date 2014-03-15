@@ -8,11 +8,6 @@
 
 #import "PlantViewController.h"
 
-@interface PlantViewController () {
-    Plant *_plant;
-}
-@end
-
 @implementation PlantViewController
 
 - (void)viewDidLoad
@@ -29,11 +24,18 @@
 - (void)setPlant:(Plant *)plant
 {
     [self view];
-    self.title = plant.commonName;
-    self.commonNameLabel.text = plant.commonName;
-    self.latinNameLabel.text = plant.latinName;
-    self.typeLabel.text = plant.type;
-    [self.imageView setImageWithURL:plant.imageURL placeholderImage:[Image placeholder]];
+    _plant = plant;
+    self.title = _plant.commonName;
+    self.commonNameLabel.text = _plant.commonName;
+    self.latinNameLabel.text = _plant.latinName;
+    self.typeLabel.text = _plant.type;
+    [self.imageView setImageWithURL:_plant.imageURL placeholderImage:[Image placeholder]];
+}
+
+- (IBAction)moreInfoClicked {
+    NSString *encodedLatinName = [_plant.latinName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://google.com/search?q=%@", encodedLatinName]];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 @end

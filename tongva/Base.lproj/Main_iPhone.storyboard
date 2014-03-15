@@ -1,66 +1,336 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kSe-x0-wbV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kSe-x0-wbV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Hills View Controller - Tongva Park-->
-        <scene sceneID="Bmz-Hp-49Z">
+        <scene sceneID="dvv-QD-igu">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" title="Tongva Park" id="Gk8-CO-CKg" customClass="HillsViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="bgk-8r-nKx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z4Y-9S-g0A">
-                            <size key="itemSize" width="320" height="67"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HillCell" id="5tM-cP-s9X" customClass="HillCell">
-                                <rect key="frame" x="0.0" y="64" width="320" height="67"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Observation Hill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62J-X6-fw3">
-                                            <rect key="frame" x="20" y="0.0" width="280" height="67"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <size key="customSize" width="320" height="67"/>
+                <viewController id="sGL-VO-8Au" customClass="HillsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MRf-rB-XDn"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIo-UN-U0E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NVZ-O2-grT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBw-Dy-ZoH">
+                                <rect key="frame" x="270" y="442" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="label" destination="62J-X6-fw3" id="W8k-Ek-Wgg"/>
+                                    <segue destination="vJQ-NJ-PdW" kind="push" id="uyx-aj-Wt0"/>
                                 </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Gk8-CO-CKg" id="psw-5i-DrS"/>
-                            <outlet property="delegate" destination="Gk8-CO-CKg" id="Ahe-Cr-bxC"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Tongva Park" id="XKb-vr-aLx"/>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="0uL-wz-8H7" userLabel="Observation Hill">
+                                <rect key="frame" x="0.0" y="64" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="observation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cmf-Fi-OnV">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-SL-uA9">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ZAb-gJ-qmn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Observation Hill">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="OPs-Ii-lII"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Cmf-Fi-OnV" secondAttribute="bottom" id="9oS-EJ-4k5"/>
+                                    <constraint firstAttribute="trailing" secondItem="qC7-SL-uA9" secondAttribute="trailing" id="PTe-xf-xEh"/>
+                                    <constraint firstItem="Cmf-Fi-OnV" firstAttribute="top" secondItem="0uL-wz-8H7" secondAttribute="top" id="b2N-Jw-vTE"/>
+                                    <constraint firstItem="qC7-SL-uA9" firstAttribute="leading" secondItem="Cmf-Fi-OnV" secondAttribute="leading" id="gdV-BN-odr"/>
+                                    <constraint firstItem="Cmf-Fi-OnV" firstAttribute="trailing" secondItem="qC7-SL-uA9" secondAttribute="trailing" id="vaW-3w-ZGT"/>
+                                    <constraint firstItem="Cmf-Fi-OnV" firstAttribute="leading" secondItem="0uL-wz-8H7" secondAttribute="leading" id="w3o-4k-SVC"/>
+                                    <constraint firstItem="qC7-SL-uA9" firstAttribute="top" secondItem="0uL-wz-8H7" secondAttribute="top" constant="8" id="ywq-L6-LOA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRB-AS-DnD" userLabel="Gathering Hill">
+                                <rect key="frame" x="0.0" y="154" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gathering.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="TvH-Jv-fwo">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBH-5s-yD0">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="vK2-EH-wDb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Gathering Hill">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="7Zt-Zt-WLM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BBH-5s-yD0" firstAttribute="leading" secondItem="TvH-Jv-fwo" secondAttribute="leading" id="4ZC-0p-wBj"/>
+                                    <constraint firstItem="BBH-5s-yD0" firstAttribute="top" secondItem="MRB-AS-DnD" secondAttribute="top" constant="8" id="AMB-Xf-oM6"/>
+                                    <constraint firstAttribute="trailing" secondItem="BBH-5s-yD0" secondAttribute="trailing" id="Jf3-N0-yRO"/>
+                                    <constraint firstItem="TvH-Jv-fwo" firstAttribute="top" secondItem="MRB-AS-DnD" secondAttribute="top" id="Uii-jM-Yb6"/>
+                                    <constraint firstAttribute="bottom" secondItem="TvH-Jv-fwo" secondAttribute="bottom" id="Ysq-of-fyg"/>
+                                    <constraint firstItem="BBH-5s-yD0" firstAttribute="leading" secondItem="MRB-AS-DnD" secondAttribute="leading" id="fyR-cJ-SWd"/>
+                                    <constraint firstItem="TvH-Jv-fwo" firstAttribute="trailing" secondItem="BBH-5s-yD0" secondAttribute="trailing" id="sjr-do-qBQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZn-Z3-AEb" userLabel="Garden Hill">
+                                <rect key="frame" x="0.0" y="244" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-Ft-77W">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-VE-dUM">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Dzi-nb-LYx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Garden Hill">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="aGQ-LK-2r7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AxG-VE-dUM" firstAttribute="leading" secondItem="IZn-Z3-AEb" secondAttribute="leading" id="4lg-nD-IJy"/>
+                                    <constraint firstItem="a2h-Ft-77W" firstAttribute="trailing" secondItem="AxG-VE-dUM" secondAttribute="trailing" id="HkO-eQ-rKW"/>
+                                    <constraint firstItem="AxG-VE-dUM" firstAttribute="leading" secondItem="a2h-Ft-77W" secondAttribute="leading" id="NRN-cd-wqw"/>
+                                    <constraint firstItem="a2h-Ft-77W" firstAttribute="top" secondItem="IZn-Z3-AEb" secondAttribute="top" id="SOI-9w-aFJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="a2h-Ft-77W" secondAttribute="bottom" id="cQK-zY-LRc"/>
+                                    <constraint firstAttribute="trailing" secondItem="AxG-VE-dUM" secondAttribute="trailing" id="nG6-yH-Z6W"/>
+                                    <constraint firstItem="AxG-VE-dUM" firstAttribute="top" secondItem="IZn-Z3-AEb" secondAttribute="top" constant="8" id="sOK-9U-CmX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hes-yG-8do" userLabel="Discovery Hill">
+                                <rect key="frame" x="0.0" y="334" width="320" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sx5-LS-J6Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbx-gm-aXg">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="I3o-l1-Zjm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Discovery Hill">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="xWX-ci-aWH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Qbx-gm-aXg" firstAttribute="leading" secondItem="hes-yG-8do" secondAttribute="leading" id="AAn-rb-3YY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qbx-gm-aXg" secondAttribute="trailing" id="GU2-sG-ujQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sx5-LS-J6Q" secondAttribute="bottom" id="Yif-bU-58i"/>
+                                    <constraint firstItem="Sx5-LS-J6Q" firstAttribute="trailing" secondItem="Qbx-gm-aXg" secondAttribute="trailing" id="d6a-On-mEm"/>
+                                    <constraint firstItem="Qbx-gm-aXg" firstAttribute="top" secondItem="hes-yG-8do" secondAttribute="top" constant="8" id="dTa-hq-xga"/>
+                                    <constraint firstItem="Qbx-gm-aXg" firstAttribute="leading" secondItem="Sx5-LS-J6Q" secondAttribute="leading" id="zOT-fZ-YBN"/>
+                                    <constraint firstItem="Sx5-LS-J6Q" firstAttribute="top" secondItem="hes-yG-8do" secondAttribute="top" id="zxQ-aY-w0c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zBw-Dy-ZoH" secondAttribute="trailing" constant="8" id="43d-Rj-2DY"/>
+                            <constraint firstItem="MRB-AS-DnD" firstAttribute="height" secondItem="0uL-wz-8H7" secondAttribute="height" id="85d-vu-cAv"/>
+                            <constraint firstAttribute="trailing" secondItem="hes-yG-8do" secondAttribute="trailing" id="APA-qg-Q5e"/>
+                            <constraint firstItem="hes-yG-8do" firstAttribute="leading" secondItem="NVZ-O2-grT" secondAttribute="leading" id="GF5-v4-asT"/>
+                            <constraint firstItem="MRB-AS-DnD" firstAttribute="top" secondItem="0uL-wz-8H7" secondAttribute="bottom" constant="2" id="GNo-rZ-Q4m"/>
+                            <constraint firstItem="0uL-wz-8H7" firstAttribute="top" secondItem="MRf-rB-XDn" secondAttribute="bottom" id="GWz-n4-B7r"/>
+                            <constraint firstItem="IZn-Z3-AEb" firstAttribute="leading" secondItem="NVZ-O2-grT" secondAttribute="leading" id="IfK-DR-GPm"/>
+                            <constraint firstAttribute="trailing" secondItem="0uL-wz-8H7" secondAttribute="trailing" id="Jy7-kG-s0G"/>
+                            <constraint firstItem="MRB-AS-DnD" firstAttribute="height" secondItem="IZn-Z3-AEb" secondAttribute="height" id="KdW-D3-OAw"/>
+                            <constraint firstItem="hes-yG-8do" firstAttribute="top" secondItem="IZn-Z3-AEb" secondAttribute="bottom" constant="2" id="MH9-Yk-yfW"/>
+                            <constraint firstItem="zBw-Dy-ZoH" firstAttribute="top" secondItem="hes-yG-8do" secondAttribute="bottom" constant="20" id="PBQ-3b-YkH"/>
+                            <constraint firstItem="IZn-Z3-AEb" firstAttribute="height" secondItem="hes-yG-8do" secondAttribute="height" id="SBP-o6-Zhe"/>
+                            <constraint firstAttribute="trailing" secondItem="MRB-AS-DnD" secondAttribute="trailing" id="Vp5-AG-dhZ"/>
+                            <constraint firstItem="IZn-Z3-AEb" firstAttribute="top" secondItem="MRB-AS-DnD" secondAttribute="bottom" constant="2" id="Xzj-ji-4XY"/>
+                            <constraint firstItem="MRB-AS-DnD" firstAttribute="leading" secondItem="NVZ-O2-grT" secondAttribute="leading" id="iAK-jI-2zM"/>
+                            <constraint firstItem="rIo-UN-U0E" firstAttribute="top" secondItem="zBw-Dy-ZoH" secondAttribute="bottom" constant="20" symbolic="YES" id="l8z-4y-6s5"/>
+                            <constraint firstAttribute="trailing" secondItem="IZn-Z3-AEb" secondAttribute="trailing" id="tOL-bc-JvG"/>
+                            <constraint firstItem="0uL-wz-8H7" firstAttribute="leading" secondItem="NVZ-O2-grT" secondAttribute="leading" id="uf5-rC-F7E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tongva Park" id="3tC-ta-wil"/>
                     <connections>
-                        <segue destination="8km-kH-Z9J" kind="push" identifier="showPlant" id="F6X-SF-Hoh"/>
+                        <segue destination="8km-kH-Z9J" kind="push" identifier="showHill" id="cJx-bg-upA"/>
                     </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jZv-EE-Afx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7m-P3-Sjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ws2-CC-Rw3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Gathering Hill">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="qTT-A1-DP1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xlO-RY-7C5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Discovery Hill">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="gmJ-6c-ewy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wC0-Fx-dGh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Garden Hill">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hillClicked:" destination="sGL-VO-8Au" eventType="touchUpInside" id="5jd-T0-W9K"/>
+                    </connections>
+                </button>
             </objects>
-            <point key="canvasLocation" x="175" y="83"/>
+            <point key="canvasLocation" x="153" y="83"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="MPU-M3-6bV">
+            <objects>
+                <viewController id="vJQ-NJ-PdW" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="isb-ot-h1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="usZ-aS-gks"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Clg-eP-59T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Santa Monica provided all the data through their Open Data initiative." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Wdx-Sx-bAo">
+                                <rect key="frame" x="20" y="147" width="280" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This app was created by Jeff Dickey as a Code for Los Angeles project." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="3DH-Zk-WX0">
+                                <rect key="frame" x="20" y="85" width="280" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqJ-4h-Tge">
+                                <rect key="frame" x="20" y="336" width="280" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Jeff Dickey">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jeffDickeyClicked" destination="vJQ-NJ-PdW" eventType="touchUpInside" id="2cK-YE-50S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddj-tY-0JE">
+                                <rect key="frame" x="20" y="380" width="280" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Code for Los Angeles">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="codeForLosAngelesClicked" destination="vJQ-NJ-PdW" eventType="touchUpInside" id="o40-xO-5Ig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrT-rs-lGw">
+                                <rect key="frame" x="20" y="424" width="280" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Tongva Park Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tongaParkInfoClicked" destination="vJQ-NJ-PdW" eventType="touchUpInside" id="sYk-fI-zpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IrT-rs-lGw" firstAttribute="leading" secondItem="Clg-eP-59T" secondAttribute="leading" constant="20" id="4C3-o5-PXQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ddj-tY-0JE" secondAttribute="trailing" constant="20" id="5Yf-tU-WrA"/>
+                            <constraint firstItem="usZ-aS-gks" firstAttribute="top" secondItem="IrT-rs-lGw" secondAttribute="bottom" constant="20" id="Caw-jx-kNM"/>
+                            <constraint firstAttribute="trailing" secondItem="uqJ-4h-Tge" secondAttribute="trailing" constant="20" id="MuD-v9-rfE"/>
+                            <constraint firstItem="ddj-tY-0JE" firstAttribute="leading" secondItem="Clg-eP-59T" secondAttribute="leading" constant="20" id="cdh-eG-NFM"/>
+                            <constraint firstItem="uqJ-4h-Tge" firstAttribute="leading" secondItem="Clg-eP-59T" secondAttribute="leading" constant="20" id="esg-0U-bsh"/>
+                            <constraint firstItem="ddj-tY-0JE" firstAttribute="top" secondItem="uqJ-4h-Tge" secondAttribute="bottom" constant="8" id="k7M-9b-wqL"/>
+                            <constraint firstAttribute="trailing" secondItem="IrT-rs-lGw" secondAttribute="trailing" constant="20" id="njc-qo-9xO"/>
+                            <constraint firstItem="IrT-rs-lGw" firstAttribute="top" secondItem="ddj-tY-0JE" secondAttribute="bottom" constant="8" id="q00-I1-lHc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Upe-OB-Hrr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipl-E8-7v8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="783"/>
         </scene>
         <!--Hill View Controller-->
         <scene sceneID="apz-wO-ZHn">
             <objects>
                 <viewController id="8km-kH-Z9J" customClass="HillViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="y8n-Id-LvO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="10" id="Hkh-4T-Pnk">
@@ -165,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6N-bb-VbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="83"/>
+            <point key="canvasLocation" x="686" y="83"/>
         </scene>
         <!--Plant View Controller-->
         <scene sceneID="ZM1-H2-bcB">
@@ -176,15 +446,15 @@
                         <viewControllerLayoutGuide type="bottom" id="0rT-Ta-6Cr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CCH-JT-ORg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" image="Amaryllis belladonna.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W7f-70-Mts">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu8-Vi-Lcb">
-                                <rect key="frame" x="0.0" y="473" width="320" height="95"/>
+                                <rect key="frame" x="0.0" y="348" width="320" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naked Lady" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-J9-gm9">
@@ -208,19 +478,32 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-6M-EWe">
+                                        <rect key="frame" x="20" y="95" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="More Info">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moreInfoClicked" destination="IHY-UJ-AEH" eventType="touchUpInside" id="W9P-Zb-gTk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="UmJ-J9-gm9" firstAttribute="top" secondItem="Iu8-Vi-Lcb" secondAttribute="top" constant="8" id="2LZ-Vh-vNJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="zyz-6M-EWe" secondAttribute="trailing" constant="20" id="48j-3O-WjY"/>
                                     <constraint firstAttribute="trailing" secondItem="K5I-vu-Nym" secondAttribute="trailing" constant="20" id="BAD-2H-M2j"/>
                                     <constraint firstAttribute="trailing" secondItem="UmJ-J9-gm9" secondAttribute="trailing" constant="20" id="ECz-bU-8cH"/>
                                     <constraint firstAttribute="trailing" secondItem="sxL-kE-XV8" secondAttribute="trailing" constant="20" id="JXm-9a-Jw7"/>
                                     <constraint firstItem="K5I-vu-Nym" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="JxV-wl-NkZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="sxL-kE-XV8" secondAttribute="bottom" constant="8" id="REg-hg-jTM"/>
                                     <constraint firstItem="sxL-kE-XV8" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="Xg0-aX-IeQ"/>
+                                    <constraint firstItem="zyz-6M-EWe" firstAttribute="top" secondItem="sxL-kE-XV8" secondAttribute="bottom" constant="8" id="ef6-ZJ-R7j"/>
                                     <constraint firstItem="sxL-kE-XV8" firstAttribute="top" secondItem="K5I-vu-Nym" secondAttribute="bottom" constant="8" id="gYm-kw-heq"/>
                                     <constraint firstItem="UmJ-J9-gm9" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="kmT-7n-sG8"/>
                                     <constraint firstItem="K5I-vu-Nym" firstAttribute="top" secondItem="UmJ-J9-gm9" secondAttribute="bottom" constant="8" id="xsA-F3-Rwx"/>
+                                    <constraint firstItem="zyz-6M-EWe" firstAttribute="leading" secondItem="Iu8-Vi-Lcb" secondAttribute="leading" constant="20" id="zac-zY-5ZS"/>
+                                    <constraint firstAttribute="bottom" secondItem="zyz-6M-EWe" secondAttribute="bottom" constant="7" id="zng-Vh-ncF"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -245,12 +528,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU7-Sl-IxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="83"/>
+            <point key="canvasLocation" x="1144" y="83"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="dSt-fl-lq1">
             <objects>
-                <navigationController definesPresentationContext="YES" id="kSe-x0-wbV" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="kSe-x0-wbV" customClass="NavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8NM-fD-t2d">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -259,7 +542,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="Gk8-CO-CKg" kind="relationship" relationship="rootViewController" id="eC2-hY-8Ch"/>
+                        <segue destination="sGL-VO-8Au" kind="relationship" relationship="rootViewController" id="fuZ-Jh-dIk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R60-K3-ANM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,10 +552,14 @@
     </scenes>
     <resources>
         <image name="Amaryllis belladonna.jpg" width="613" height="455"/>
+        <image name="discovery.jpg" width="1200" height="990"/>
+        <image name="garden.jpg" width="1200" height="1600"/>
+        <image name="gathering.JPG" width="4928" height="3264"/>
+        <image name="observation.jpg" width="4928" height="3264"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

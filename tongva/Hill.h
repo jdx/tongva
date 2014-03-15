@@ -18,6 +18,8 @@
 @interface Hill : NSObject
 
 + (NSArray *)hills;
++ (Hill *)forLocation:(CLLocationCoordinate2D)loc;
++ (Hill *)forName:(NSString *)name;
 
 - (Hill *)initWithDict:(NSDictionary *)dict;
 

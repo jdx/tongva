@@ -57,24 +57,39 @@
     .unwrap;
 }
 
-- (MKPolygon *)polygon
-{
-    if (!_polygon) {
-        NSArray *coordinates = _dict[@"geometry"][@"coordinates"][0];
-        CLLocationCoordinate2D *ccoordinates = calloc(coordinates.count, sizeof(CLLocationCoordinate2D));
-        for (int i=0; i<coordinates.count; i++) {
-            CLLocationCoordinate2D c = CLLocationCoordinate2DMake([coordinates[i][1] floatValue], [coordinates[i][0] floatValue]);
-            ccoordinates[i] = c;
-        }
-        _polygon = [MKPolygon polygonWithCoordinates:ccoordinates count:coordinates.count];
-    }
-    return _polygon;
-}
-
 - (BOOL)isLocationOnHill:(CLLocationCoordinate2D)loc
 {
-    MKMapRect rect = MKMapRectMake(loc.latitude, loc.longitude, 0, 0);
-    return [self.polygon intersectsMapRect:rect];
+    CGMutablePathRef path = CGPathCreateMutable();
+    NSArray *coords = _dict[@"geometry"][@"coordinates"][0];
+    CGPathMoveToPoint(path, nil, [coords[0][0] floatValue], [coords[0][1] floatValue]);
+    for(int i=0; i<coords.count; i++) {
+        CGPathAddLineToPoint(path, nil, [coords[i][0] floatValue], [coords[i][1] floatValue]);
+    }
+    CGPathCloseSubpath(path);
+    CGPoint p = CGPointMake(loc.longitude, loc.latitude);
+    BOOL contains = CGPathContainsPoint(path, nil, p, false);
+    CGPathRelease(path);
+    return contains;
+}
+
++ (Hill *)forLocation:(CLLocationCoordinate2D)loc
+{
+    for (Hill *h in self.hills) {
+        if ([h isLocationOnHill:loc]) {
+            return h;
+        }
+    }
+    return nil;
+}
+
++ (Hill *)forName:(NSString *)name
+{
+    for (Hill *h in self.hills) {
+        if ([h.name isEqualToString:name]) {
+            return h;
+        }
+    }
+    return nil;
 }
 
 @end

@@ -18,10 +18,12 @@
               @"properties": @{
                       @"Area": @"Observation Hill"
                       },
-              @"geometry": @{ @"coordinates": @{} }
+              @"geometry": @{ @"coordinates":
+                                  @[@[@[@0.0f, @0.0f],
+                                      @[@2.0f, @0.0f],
+                                      @[@2.0f, @2.0f],
+                                      @[@0.0f, @2.0f]]]}
               }];
-//    NSArray *coords = [[NSArray alloc] initWithObjects:0.0, nil];
-//    hill[@"geometry"][@"coordinates"] = coords;
 }
 
 - (void)testName
@@ -33,6 +35,12 @@
 {
     CLLocationCoordinate2D loc = CLLocationCoordinate2DMake(1, 1);
     XCTAssert([hill isLocationOnHill:loc], @"Location on hill");
+}
+
+- (void)testIsLocationNotOnHill
+{
+    CLLocationCoordinate2D loc = CLLocationCoordinate2DMake(3, 3);
+    XCTAssertFalse([hill isLocationOnHill:loc], @"Location on hill");
 }
 
 @end

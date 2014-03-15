@@ -4,3 +4,4 @@ link_with 'tongva', 'tongvaTests'
 
 pod 'Underscore.m', '~> 0.2.1'
 pod 'AFNetworking', '~> 2.2.0'
+pod 'HockeySDK', '~> 3.5.4'

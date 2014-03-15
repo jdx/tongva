@@ -12,6 +12,10 @@
 #import "Hill.h"
 #import "HillCell.h"
 
-@interface HillsViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HillsViewController : UIViewController {
+    Hill *_currentHill;
+}
+
+- (void)showHill:(Hill *)hill;
 
 @end

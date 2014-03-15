@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HockeySDK/HockeySDK.h>
+
 #import "TongvaData.h"
+#import "TongvaLocation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

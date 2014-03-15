@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavigationViewController : UINavigationController
+#import "Hill.h"
+#import "NewHillAlert.h"
+#import "TongvaLocation.h"
+#import "HillsViewController.h"
+
+@interface NavigationViewController : UINavigationController <CLLocationManagerDelegate> {
+    Hill *_previousHill;
+    NewHillAlert *_newHillAlert;
+    UITapGestureRecognizer *_tapGesture;
+}
 
 @end

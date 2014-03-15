@@ -12,8 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"3dbccdabaf873085f42186fa1b86cd87"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     // immediately load json file
     [TongvaData json];
+    [TongvaLocation startUpdatingLocation];
     return YES;
 }
 							
